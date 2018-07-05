@@ -36,10 +36,10 @@ def write_slogan():
 master = Tk()
 master.geometry("400x400")
 lable1 = Label(master, text="Stretch", font=("Helvetica", 24)).grid(row=0)
-Label(master, text="PRL", font=("Helvetica", 24)).grid(row=1)
+lable2 = Label(master, text="PRL", font=("Helvetica", 24)).grid(row=1)
 Label(master, text="PRW", font=("Helvetica", 24)).grid(row=2)
-button = tkinter.Button(master, text="Result", command=write_slogan, font=("Helvetica", 24)).grid(row=3)
-button.place(relx=0.5, rely=0.5, anchor=CENTER)
+button = tkinter.Button(master, text="Result", command=write_slogan, font=("Helvetica", 24)).grid(row=3, column=1)
+
 Label(master, text="FRJ", font=("Helvetica", 24)).grid(row=4)
 Label(master, text="FRP", font=("Helvetica", 24)).grid(row=5)
 Label(master, text="FRL", font=("Helvetica", 24)).grid(row=6)
@@ -50,6 +50,7 @@ e3 = Entry(master, font=("Helvetica", 24))
 e4 = Entry(master, font=("Helvetica", 24))
 e5 = Entry(master, font=("Helvetica", 24))
 e6 = Entry(master, font=("Helvetica", 24))
+
 
 e1.grid(row=0, column=1)
 e2.grid(row=1, column=1)
